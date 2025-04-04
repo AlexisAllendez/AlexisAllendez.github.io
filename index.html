@@ -1,70 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odontología - Sonríe con Confianza</title>
+    <title>Dr. Juan Perez - Odontólogo</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<body>
-    <nav class="nav">
-        <span class="menu-toggle">☰</span>
-        <div class="nav-links">
-            <a href="#about">Sobre mi</a>
-            <a href="#services">Servicios</a>
-            <a href="#contacto">Contacto</a>
-        </div>
-    </nav>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Dr. nombre profesional</h1>
-            <p>Odontologo ( especialidad)</p>
-            <a href="#contacto" class="btn">Realiza tu consulta</a>
-        </div>
-    </header>
-    
-    <section id="about" class="about">
-        <div class="about-container">
-            <div class="about-text">
-                <h2>Sobre mí</h2>
-                <p>Mi nombre es [Nombre del Profesional], y soy un odontólogo con [X] años de experiencia en el cuidado bucal. A lo largo de mi carrera, he tenido el privilegio de ayudar a cientos de pacientes a lograr una sonrisa más saludable y segura</p>
+<body>
+
+    <div class="container">
+        <header class="nav">
+            <img src="imagen.png" alt="Logo Clínica">
+            <nav class="nav-links">
+                <a href="#about">Sobre mí</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
+                <button>Agendar Cita</button>
+            </nav>
+        </header>
+
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Dr. Juan Perez</h1>
+                <p class="odonto">Odontólogo Especialista</p>
             </div>
-            <div class="about-image">
-                <img src="foto-profesional.jpg" alt="Foto del odontólogo">
+        </section>
+
+
+        <div class="separator">
+            <p>Especialista en ortodoncia, blanqueamiento e implantes</p>
+        </div>
+
+
+        <section id="servicios" class="section">
+            <h2>Nuestros Servicios</h2>
+            <div class="service-container">
+                <div class="service-card">
+                    <img src="ortodoncia.png" alt="Ortodoncia">
+                    <div class="service-info">
+                        <h3>Ortodoncia</h3>
+                        <p>Corrección de la alineación dental con brackets y alineadores invisibles. Tratamientos
+                            personalizados.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="implantes.jpg" alt="Implantes Dentales">
+                    <div class="service-info">
+                        <h3>Implantes Dentales</h3>
+                        <p>Recupera la funcionalidad y estética de tu sonrisa con implantes de última generación.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="blanqueamiento.jpg" alt="Blanqueamiento Dental">
+                    <div class="service-info">
+                        <h3>Blanqueamiento Dental</h3>
+                        <p>Tratamientos avanzados para devolver el brillo y la blancura natural a tus dientes.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    
-    <section id="services" class="services">
-        <h2>Nuestros Servicios</h2>
-        <div class="services-grid">
-            <div class="service-card">🦷<h3>Implantes Dentales</h3></div>
-            <div class="service-card">😁<h3>Ortodoncia</h3></div>
-            <div class="service-card">✨<h3>Blanqueamiento</h3></div>
-        </div>
-    </section>
-    
-    
-    <section id="contacto" class="contact">
-        <h2>Envia tu consulta</h2>
-        <form>
-            <input type="text" placeholder="Nombre" required>
-            <input type="tel" placeholder="Teléfono" required>
-            <input type="email" placeholder="Correo Electrónico" required>
-            <textarea placeholder="Mensaje" rows="4"></textarea>
-            <button type="submit" class="btn">Enviar</button>
-        </form>
-    </section>
-    
-    <a href="https://wa.me/XXXXXXXXXXX" class="whatsapp-btn" target="_blank">📱</a>
-    
-    <footer>
-        <p>&copy; 2024 Sonríe con Confianza | Clínica Odontológica</p>
-        <div class="social-links">
-            <a href="https://instagram.com/TU_INSTAGRAM" target="_blank">📸 Instagram</a>
-        </div>
-    </footer>
+        </section>
+
+
+        <section id="contacto" class="section">
+            <h2>Contáctanos</h2>
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                <button type="submit" class="btn-primary">Enviar</button>
+            </form>
+        </section>
+
+
+
+        <footer class="footer">
+            <div class="footer-container">
+
+                <div class="footer-info">
+                    <h3>Dental</h3>
+                    <p>Clínica especializada en ortodoncia, blanqueamiento e implantes dentales.</p>
+                    <p><strong>Teléfono:</strong> +123 456 7890</p>
+                    <p><strong>Correo:</strong> contacto@deepdental.com</p>
+                </div>
+
+
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="instagram.svg" alt="Instagram">
+                    </a>
+                </div>
+
+
+                <div class="footer-map">
+                    <h3>Ubicación</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434508619!2d-122.41941548468149!3d37.77492997975925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b5c38a9%3A0x4e8b4e9b4c8e9b0!2sSan%20Francisco%2C%20CA%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1626172059985!5m2!1ses!2ses"
+                        width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+
+            <div class="footer-bottom">
+                <p>Dental - Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
 
 </body>
+
 </html>
