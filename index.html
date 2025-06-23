@@ -1,119 +1,330 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Landing page de Karen Garazco - Nutricionista fit especializada en cambios físicos a través de la alimentación." />
-  <title>Karen Garazco | Nutrición Fit</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonela Foniciello - Nutricionista Deportiva</title>
+    <meta name="description" content="Nutricionista deportiva especializada en alimentación vegana y vegetariana. Transforma tu vida con una nutrición saludable y sostenible.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
-  <nav>
-  <a href="#inicio">Inicio</a>
-  <a href="#sobremi">Sobre mí</a>
-  <a href="#servicios">Servicios</a>
-  <a href="#testimonios">Testimonios</a>
-  <a href="#contacto">Contacto</a>
-  <div class="menu-toggle" id="menu-toggle">☰</div>
-</nav>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-leaf text-primary"></i>
+                <span class="ms-2 fw-bold">Antonela Foniciello</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Transforma tu vida con nutrición saludable</h1>
+                        <p class="hero-subtitle">Especialista en nutrición deportiva, vegana y vegetariana. Te ayudo a alcanzar tus objetivos de salud y rendimiento deportivo.</p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary btn-lg me-3">Realiza tu consulta</a>
+                            <a href="#services" class="btn btn-outline-primary btn-lg">Ver Servicios</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <div class="floating-card">
+                            <i class="fas fa-heartbeat"></i>
+                            <h4>Salud Integral</h4>
+                        </div>
+                        <div class="floating-card">
+                            <i class="fas fa-running"></i>
+                            <h4>Rendimiento Deportivo</h4>
+                        </div>
+                        <div class="floating-card">
+                            <i class="fas fa-seedling"></i>
+                            <h4>Alimentación Sostenible</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="hero" id="inicio">
-  <div class="hero-content">
-    <h1>Karen Garazco</h1>
-    <p>Nutricionista Fit | Cambia tu cuerpo con una buena alimentación</p>
-    <a href="#contacto" class="btn-primary">Agenda tu consulta</a>
-  </div>
-</section>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2 class="section-title">Sobre Mí</h2>
+                        <p class="lead">Soy Antonela Foniciello, nutricionista especializada en alimentación deportiva, vegana y vegetariana.</p>
+                        <p>Con años de experiencia en el campo de la nutrición, me dedico a ayudar a personas a alcanzar sus objetivos de salud y rendimiento deportivo a través de una alimentación balanceada y sostenible.</p>
+                        <div class="credentials">
+                            <div class="credential-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Licenciada en Nutrición</span>
+                            </div>
+                            <div class="credential-item">
+                                <i class="fas fa-medal"></i>
+                                <span>Especialista en Nutrición Deportiva</span>
+                            </div>
+                            <div class="credential-item">
+                                <i class="fas fa-leaf"></i>
+                                <span>Certificada en Nutrición Vegana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-md"></i>
+                            <p>Foto de Antonela</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="quote-section">
-  <div class="container">
-    <blockquote>
-      "Tu cuerpo puede con casi todo, es tu mente la que tienes que convencer."
-    </blockquote>
-  </div>
-</section>
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Mis Servicios</h2>
+                <p class="section-subtitle">Soluciones personalizadas para tus objetivos de salud</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h4>Nutrición Deportiva</h4>
+                        <p>Planes nutricionales personalizados para mejorar tu rendimiento deportivo y recuperación muscular.</p>
+                        <ul class="service-features">
+                            <li>Análisis de composición corporal</li>
+                            <li>Planificación de comidas pre/post entrenamiento</li>
+                            <li>Seguimiento de progreso</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h4>Nutrición Vegana</h4>
+                        <p>Transición completa a una alimentación vegana saludable y nutricionalmente balanceada.</p>
+                        <ul class="service-features">
+                            <li>Transición gradual y sostenible</li>
+                            <li>Educación sobre proteínas vegetales</li>
+                            <li>Recetas y planificación de menús</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-carrot"></i>
+                        </div>
+                        <h4>Nutrición Vegetariana</h4>
+                        <p>Planes nutricionales vegetarianos que cubren todas tus necesidades nutricionales.</p>
+                        <ul class="service-features">
+                            <li>Diversificación de fuentes proteicas</li>
+                            <li>Optimización de absorción de nutrientes</li>
+                            <li>Suplementación cuando sea necesaria</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Lo que dicen mis clientes</h2>
+                <p class="section-subtitle">Transformaciones reales, resultados comprobables</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Antonela me ayudó a mejorar mi rendimiento deportivo con una alimentación vegana. Increíbles resultados!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h5>María González</h5>
+                                <span>Atleta Vegana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"La transición a una alimentación vegetariana fue mucho más fácil con la guía de Antonela. Me siento mejor que nunca."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h5>Carlos Rodríguez</h5>
+                                <span>Cliente Vegetariano</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Excelente profesional. Me ayudó a optimizar mi nutrición para competencias y los resultados fueron increíbles."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h5>Ana Martínez</h5>
+                                <span>Deportista Profesional</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="about">
-  <div class="about-text">
-    <h2>Sobre mí</h2>
-  <p>Transformo cuerpos a través de una alimentación consciente y efectiva.</p>
-  </div>
-  <div class="about-img-fade">
-    <img src="/public/img/karen.jpg" alt="Sobre mí">
-  </div>
-</section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h2 class="section-title">Contacto</h2>
+                        <p class="lead">¿Listo para transformar tu vida? ¡Agenda tu consulta gratuita!</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>antonela@nutricion.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+54 11 1234-5678</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>San Miguel de Tucumán, Argentina</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-control" id="servicio" required>
+                                    <option value="">Selecciona un servicio</option>
+                                    <option value="deportiva">Nutrición Deportiva</option>
+                                    <option value="vegana">Nutrición Vegana</option>
+                                    <option value="vegetariana">Nutrición Vegetariana</option>
+                                    <option value="consulta">Consulta General</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="mensaje" rows="4" placeholder="Cuéntame sobre tus objetivos"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg w-100">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Antonela Foniciello. Todos los derechos reservados.</p>
+                </div>
+               
+            </div>
+        </div>
+    </footer>
 
-<section class="services" id="servicios">
-  <div class="container">
-    <h2>Servicios</h2>
-    <div class="service-cards">
-      <div class="card">
-        <h3>Planes Personalizados</h3>
-        <p>Diseñados para tus objetivos físicos, estilo de vida y preferencias.</p>
-      </div>
-      <div class="card">
-        <h3>Acompañamiento Online</h3>
-        <p>Seguimiento mensual para que mantengas tu progreso estés donde estés.</p>
-      </div>
-      <div class="card">
-        <h3>Desafíos Fit</h3>
-        <p>Programas de 4 a 8 semanas para potenciar tu transformación física.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5493812345678?text=Hola%20Antonela!%20Me%20interesa%20conocer%20más%20sobre%20tus%20servicios%20de%20nutrición." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">¡Chatea conmigo!</span>
+    </a>
 
-
-<section class="testimonials" id="testimonios">
-  <div class="container">
-    <h2>Testimonios</h2>
-    <div class="testimonial-carousel">
-      <div class="testimonial">
-        <p>"Gracias a Karen bajé 7 kilos y me siento con más energía que nunca. Sus planes son súper fáciles de seguir."</p>
-        <strong>- Camila R.</strong>
-      </div>
-      <div class="testimonial">
-        <p>"Con su guía logré definir mi cuerpo sin pasar hambre. 100% recomendable."</p>
-        <strong>- Luciana M.</strong>
-      </div>
-      <div class="testimonial">
-        <p>"En 3 meses logré lo que no pude en 2 años. Karen te escucha y te acompaña de verdad."</p>
-        <strong>- Martina P.</strong>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="contact" id="contacto">
-  <div class="container">
-    <h2>Contacto</h2>
-    <form>
-      <input type="text" name="name" placeholder="Tu nombre">
-      <input type="email" name="email" placeholder="Tu email">
-      <textarea name="message" placeholder="Tu mensaje"></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-    <a href="https://wa.me/549XXXXXXXXXX" class="btn-whatsapp" target="_blank">Enviar mensaje por WhatsApp</a>
-  </div>
-</section>
-
-
-<footer>
-  <p>&copy; 2025 Karen Garazco - Todos los derechos reservados</p>
-  <div class="social-links">
-    <a href="#">Instagram</a>
-    <a href="#">Facebook</a>
-  </div>
-</footer>
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
 </body>
 </html>
