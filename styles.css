@@ -1,10 +1,12 @@
 /* ===== VARIABLES ===== */
 :root {
-    --primary-color: #ff6b35;
-    --primary-dark: #e55a2b;
-    --primary-light: #ff8a65;
-    --secondary-color: #2c3e50;
-    --accent-color: #f39c12;
+    --primary-color: #F3722C;
+    --primary-dark: #D65A1F;
+    --primary-light: #FF8A4A;
+    --secondary-color: #90BE6D;
+    --secondary-dark: #7A9F5A;
+    --secondary-light: #A8D18A;
+    --accent-color: #F39C12;
     --light-bg: #f8f9fa;
     --white: #ffffff;
     --text-dark: #2c3e50;
@@ -216,7 +218,7 @@ body {
 
 /* ===== HERO SECTION ===== */
 .hero-section {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 50%, var(--accent-color) 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--secondary-light) 100%);
     color: var(--white);
     position: relative;
     overflow: hidden;
@@ -242,7 +244,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(255, 107, 53, 0.9) 0%, rgba(255, 138, 101, 0.8) 50%, rgba(243, 156, 18, 0.9) 100%);
+    background: linear-gradient(135deg, rgba(243, 114, 44, 0.9) 0%, rgba(144, 190, 109, 0.8) 50%, rgba(168, 209, 138, 0.9) 100%);
 }
 
 .hero-shapes {
@@ -940,7 +942,7 @@ body {
 }
 
 .whatsapp-btn {
-    background: linear-gradient(135deg, #25d366, #128c7e);
+    background: linear-gradient(135deg, var(--secondary-color), var(--secondary-dark));
     border: none;
     color: white;
     font-size: 1.2rem;
@@ -949,15 +951,15 @@ body {
     border-radius: 12px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+    box-shadow: 0 6px 20px rgba(144, 190, 109, 0.3);
     transition: all 0.3s ease;
     margin-bottom: 2rem;
 }
 
 .whatsapp-btn:hover {
-    background: linear-gradient(135deg, #128c7e, #075e54);
+    background: linear-gradient(135deg, var(--secondary-dark), #5A7A3A);
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+    box-shadow: 0 10px 30px rgba(144, 190, 109, 0.4);
     color: white;
 }
 
@@ -988,7 +990,7 @@ body {
 
 /* ===== FOOTER ===== */
 .footer {
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--secondary-dark) 100%);
     color: white;
     position: relative;
 }
@@ -1000,7 +1002,7 @@ body {
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
 }
 
 .footer-top {
@@ -1520,12 +1522,12 @@ html {
     right: 20px;
     width: 60px;
     height: 60px;
-    background: #25d366;
+    background: var(--secondary-color);
     color: white;
     border-radius: 50%;
     text-align: center;
     font-size: 30px;
-    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    box-shadow: 0 4px 12px rgba(144, 190, 109, 0.4);
     z-index: 1000;
     transition: all 0.3s ease;
     display: flex;
@@ -1536,10 +1538,10 @@ html {
 }
 
 .whatsapp-float:hover {
-    background: #128c7e;
+    background: var(--secondary-dark);
     color: white;
     transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+    box-shadow: 0 6px 20px rgba(144, 190, 109, 0.6);
     text-decoration: none;
 }
 
@@ -1584,13 +1586,13 @@ html {
 
 @keyframes whatsapp-pulse {
     0% {
-        box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+        box-shadow: 0 4px 12px rgba(144, 190, 109, 0.4);
     }
     50% {
-        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.6);
+        box-shadow: 0 4px 20px rgba(144, 190, 109, 0.6);
     }
     100% {
-        box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+        box-shadow: 0 4px 12px rgba(144, 190, 109, 0.4);
     }
 }
 
@@ -1684,7 +1686,7 @@ html {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
 }
 
 .stat-item:hover {
@@ -2361,4 +2363,132 @@ html {
         flex-direction: column;
         gap: 0.5rem;
     }
+}
+
+.infoproducto-title-image {
+    display: block;
+    margin: 64px auto 64px auto;
+    max-width: 680px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+    border-radius: 18px;
+}
+
+@media (max-width: 768px) {
+    .infoproducto-title-image {
+        max-width: 95vw;
+        margin: 40px auto 40px auto;
+    }
+}
+
+/* NUEVO CSS CORRECTO */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    max-width: 370px;
+    margin: 0 auto;
+    padding: 0;
+    height: 520px;
+}
+
+.product-image-section {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.product-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0;
+    background: #fff;
+}
+
+.product-details {
+    flex: 1 1 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 320px;
+}
+
+.product-header h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+    color: var(--text-dark);
+    line-height: 1.2;
+}
+
+.product-author {
+    font-size: 0.9rem;
+    margin-bottom: 1em;
+    color: var(--text-light);
+}
+
+.product-description {
+    flex: 1 1 auto;
+    margin-bottom: 1.5rem;
+}
+
+.product-description p {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+    line-height: 1.05;
+    color: var(--text-dark);
+}
+
+.product-actions {
+    margin-top: auto;
+    padding-top: 0.5rem;
+}
+
+.product-actions .btn {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 0.95em;
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        max-width: 100%;
+        height: 480px;
+    }
+    .product-image-section {
+        height: 180px;
+    }
+    .product-details {
+        padding: 18px 22px 20px;
+        height: 300px;
+    }
+}
+
+.blur-preview {
+    filter: blur(4px) brightness(0.85);
+    transform: scale(0.97);
+    transition: filter 0.3s, transform 0.3s;
+}
+
+.product-card:hover .blur-preview {
+    filter: blur(2.5px) brightness(0.92);
+    transform: scale(1);
 }
